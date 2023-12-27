@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-inline: 0px;
+}
+
+.links {
+    display: flex;
+    float: right;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.gform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.gform .textb {
+    border-radius: 30px;
+    border: 1px solid gray;
+    width: 550px;
+    padding: 10px;
+    font-size: large;
+    margin-top: 40vh;
+}
+
+.gform .searchb {
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background-color: rgb(237, 237, 237);
+    padding: 8.5px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.gform .searchb:hover {
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.advancedtitle {
+    position: relative;
+    padding-top: 50px;
+    padding-left: 50px;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    color: #D93025;
+}
+
+.ptt {
+    padding-left: 50px;
+}
+
+.gaform2 {
+    display: flex;
+    gap: 40px;
+    padding-left: 50px;
+    margin-right: 40vw;
+}
+
+
+.gaform2 input {
+    border: solid 1px lightgray;
+    padding: 5px;
+}
+
+.gaform2 label {
+    margin-block: auto;
+}
+
+.gaform2 .quotes {
+    display: grid;
+    font-size: small;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.gaform2 .answers {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+}
+
+.searchba {
+    background-color: #4A8CF7;
+    border: 1px solid #396bbc;
+    border-radius: 3px;
+    color: white;
+    font-size: small;
+    padding: 8.5px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 40vw;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    body {
+        max-width: 100vw;
+    }
+
+    .advancedtitle {
+        padding-left: 10px;
+    }
+
+    .ptt {
+        padding-left: 10px;
+    }
+
+    .gform .textb {
+        width: 90vw;
+    }
+
+    .gaform2 {
+        padding-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+
+    .gaform2 input {
+        padding: 5px;
+        width: 90%;
+    }
+
+    .gaform2 label {
+        font-size: small;
+    }
+
+    .searchba {
+        margin-right: 20px;
+    }
+}
